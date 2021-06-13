@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5fe52f7f31.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Minimalista</title>
+</head>
+<body>
+  <div class="home-container">
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">&#x2630;</span>
+        <span class="close">&times;</span>
+      </button>
+      <div class="logo-container"><a href="#"><img class="logo-img" src="/assets/logo.png" alt="logo"></a><a class="logo" href="#">Minimalista</a></div>
+      <ul class="menu-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>About Us</h1>
+      <p>Each time you redistribute the program proprietary.<br>To prevent this, we have to honor the rest of the Work, and compile this Derived Work can only do so if it was added to the Licensed Product.</p>
+    </header>
+
+    <section class="features">
+      <div class="feature">
+        <img class="room-img" src="assets/room1.png" alt="room 1">
+        <h3>Orion's sword dream</h3>
+        <p>Neque porro quisquam est Sea of Tranquility qui dolorem ipsum quia dolor sit amet two ghostly white figures in coveralls and helmets are softly dancing something incredible is waiting to be known nisi ut aliquid ex ea commodi consequatur.</p>
+      </div>
+      <div class="feature">
+        <img class="room-img" src="assets/room2.png" alt="room 2">
+        <h3>Sea of Tranquility</h3>
+        <p>Neque porro quisquam est Sea of Tranquility qui dolorem ipsum quia dolor sit amet two ghostly white figures in coveralls and helmets are softly dancing something incredible is waiting to be known nisi ut aliquid ex ea commodi consequatur.</p>
+      </div>
+      <div class="feature">
+        <img class="room-img" src="assets/room3.png" alt="room 3">
+        <h3>Vast cosmic arena</h3>
+        <p>Neque porro quisquam est Sea of Tranquility qui dolorem ipsum quia dolor sit amet two ghostly white figures in coveralls and helmets are softly dancing something incredible is waiting to be known nisi ut aliquid ex ea commodi consequatur.</p>
+      </div>
+    </section>
+
+    <section class="team">
+      <h2>- Our Team -</h2>
+      <p>Descended from astronomers are creatures of the cosmos of brilliant syntheses.<br>Cambrian explosion rings of Uranus emerged into consciousness.</p>
+      <div class="team-members">
+        <div class="team-member">
+          <img class="memeber-img" src="assets/team1.png" alt="team member">
+          <h4>Melissa Style<br>Graphic Designer</h4>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="team-member">
+          <img class="memeber-img" src="assets/team2.png" alt="team member">
+          <h4>Frank Star<br>Boss</h4>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="team-member">
+          <img class="memeber-img" src="assets/team3.png" alt="team member">
+          <h4>Jane Naismith<br>Graphic Designer</h4>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="team-member">
+          <img class="memeber-img" src="assets/team4.png" alt="team member">
+          <h4>Mark Stoner<br>Web Developer</h4>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        </div>
+      
+    </section>
+
+    <section class="connect">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+      
+      <div class="contact">
+        <div class="address">
+          <h4>Company Address</h4>
+          <p>Responsive Street 7<br>London - United Kingdom<br>Europe</p>
+        </div>
+        <div class="email">
+          <h4>E-mail</h4>
+          <p><a href="mailto: contact@yourdomain.com">contact@yourdomain.com</a><br>
+            <a href="mailto: office@yourdomain.com">office@yourdomain.com</a></p>
+        </div>
+        <div class="phone">
+          <h4>Phone Numbers</h4>
+          <p>0800 4521 800 50<br>0450 5896 625 16<br>0798 6546 465 14</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>Copyright 2045 - Your Domain Name<br>Design and coding by Response Team</p>
+      </footer>
+    </section>
+  </div>
+
+  <div class="sticky-footer-wrapper">
+    <div class="sticky-footer">
+      <img src="./assets/message.svg" alt="message">
+      <div class="sticky-footer-info">
+        <h3>Got a question?</h3>
+        <span>We'd love to talk about how we can help you.</span>
+      </div>
+      <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+</html>
